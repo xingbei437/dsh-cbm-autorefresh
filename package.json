@@ -38,5 +38,13 @@
   "author": "zhiming.song <zhiming.song@funplus.com>",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xingbei437/dsh-cbm-autorefresh.git"
+  },
+  "homepage": "https://github.com/xingbei437/dsh-cbm-autorefresh#readme",
+  "bugs": {
+    "url": "https://github.com/xingbei437/dsh-cbm-autorefresh/issues"
   }
 }
