@@ -1,0 +1,13 @@
+# dsh-cbm-autorefresh bundle layer.
+#
+# Mounts the host plugin at the profile root. Override or disable it from the
+# profile patch with:
+#   - id: cbm-autorefresh
+#     disabled: true
+- insert:
+    - id: cbm-autorefresh
+      name: dsh-cbm-autorefresh
+      config:
+        enabled: true
+        # Minimum interval between two refreshes of the same directory.
+        minIntervalMs: 300000

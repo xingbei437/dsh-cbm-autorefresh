@@ -1,0 +1,42 @@
+{
+  "name": "dsh-cbm-autorefresh",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: refresh each Session's codebase-memory index for its own working directory",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "dsh": ">=0.2.0 <0.4.0",
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "codebase-memory",
+    "mcp",
+    "code-graph",
+    "index"
+  ],
+  "scripts": {
+    "test": "node --test test/index.test.js"
+  },
+  "license": "MIT",
+  "author": "zhiming.song <zhiming.song@funplus.com>",
+  "publishConfig": {
+    "access": "public"
+  }
+}
